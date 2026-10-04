@@ -61,10 +61,10 @@ describe('Test tokens file parser', () => {
 
   test('it should support tokens with owner (<owner>:<token>)', () => {
     const token = times(40, () => 'a').join('');
-    expect(parseTokens(`gittrends-app:${token}`)).toEqual([token]);
+    expect(parseTokens(`hsborges-msr:${token}`)).toEqual([token]);
     expect(
       parseTokens(
-        times(2, (number) => `gittrends-app-${number}:${times(40, () => number).join('')}`).join(
+        times(2, (number) => `hsborges-msr-${number}:${times(40, () => number).join('')}`).join(
           '\n'
         )
       )
@@ -73,7 +73,7 @@ describe('Test tokens file parser', () => {
 
   test('it should remove duplicated tokens', () => {
     const token = times(40, () => 'a').join('');
-    expect(parseTokens(times(2, () => `gittrends-app:${token}`).join('\n'))).toEqual([token]);
+    expect(parseTokens(times(2, () => `hsborges-msr:${token}`).join('\n'))).toEqual([token]);
   });
 
   test('it should read tokens from a file', async () => {

@@ -1,5 +1,5 @@
 {
-  "name": "@gittrends-app/github-proxy-server",
+  "name": "@hsborges-msr/github-proxy-server",
   "version": "12.2.0",
   "exports": "./dist/cli.js",
   "engines": {
@@ -7,7 +7,7 @@
   },
   "packageManager": "yarn@1.22.22",
   "type": "module",
-  "repository": "git@github.com:gittrends-app/github-proxy-server.git",
+  "repository": "git@github.com:hsborges-msr/github-proxy-server.git",
   "author": "Hudson Silva Borges <hudsonsilbor@gmail.com>",
   "license": "MIT",
   "scripts": {

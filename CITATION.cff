@@ -7,7 +7,7 @@ authors:
     given-names: Hudson Silva
   - family-names: Valente
     given-names: Marco Tulio
-repository-code: "https://github.com/gittrends-app/github-proxy-server"
+repository-code: "https://github.com/hsborges-msr/github-proxy-server"
 license: MIT
 preferred-citation:
   type: conference-paper

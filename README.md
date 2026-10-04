@@ -1,9 +1,9 @@
 # 🖥️ GitHub Proxy Server
 
-[![CI](https://github.com/gittrends-app/github-proxy-server/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/gittrends-app/github-proxy-server/actions/workflows/ci.yml)
-[![Coverage Status](https://coveralls.io/repos/github/gittrends-app/github-proxy-server/badge.svg)](https://coveralls.io/github/gittrends-app/github-proxy-server)
-[![GitHub version](https://badge.fury.io/gh/gittrends-app%2Fgithub-proxy-server.svg)](https://badge.fury.io/gh/gittrends-app%2Fgithub-proxy-server)
-![GitHub](https://img.shields.io/github/license/gittrends-app/github-proxy-server)
+[![CI](https://github.com/hsborges-msr/github-proxy-server/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/hsborges-msr/github-proxy-server/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/hsborges-msr/github-proxy-server/badge.svg)](https://coveralls.io/github/hsborges-msr/github-proxy-server)
+[![GitHub version](https://badge.fury.io/gh/hsborges-msr%2Fgithub-proxy-server.svg)](https://badge.fury.io/gh/hsborges-msr%2Fgithub-proxy-server)
+![GitHub](https://img.shields.io/github/license/hsborges-msr/github-proxy-server)
 
 <br/>
 
@@ -43,7 +43,7 @@
 First, you need to clone the repository:
 
 ```bash
-git clone https://github.com/gittrends-app/github-proxy-server.git
+git clone https://github.com/hsborges-msr/github-proxy-server.git
 ```
 
 Node.js >=24 and Yarn 1.22.22 are required. Then, install dependencies, build files, and run the server:
@@ -57,7 +57,7 @@ yarn start --help
 You can also build and run the Docker image directly:
 
 ```bash
-docker build -t github-proxy-server https://github.com/gittrends-app/github-proxy-server.git#master
+docker build -t github-proxy-server https://github.com/hsborges-msr/github-proxy-server.git#master
 docker run --rm -it github-proxy-server --help
 ```
 
@@ -78,7 +78,7 @@ github-proxy-server -p 3000 --tokens <tokens.txt>
 After that, just make the requests to <http://localhost:3000> instead of <https://api.github.com>. For example:
 
 ```bash
-curl -s http://localhost:3000/users/gittrends-app 2>&1
+curl -s http://localhost:3000/users/hsborges-msr 2>&1
 ```
 
 ### Proxy Authentication
@@ -98,7 +98,7 @@ GPS_AUTH_USERNAME=myuser GPS_AUTH_PASSWORD=mypass github-proxy-server -p 3000 -t
 Then make authenticated requests:
 
 ```bash
-curl -s -u myuser:mypass http://localhost:3000/users/gittrends-app 2>&1
+curl -s -u myuser:mypass http://localhost:3000/users/hsborges-msr 2>&1
 ```
 
 **Note:** `/status` and `/status/` are small public health endpoints and return `{"status":"ok"}`.
@@ -115,7 +115,7 @@ inbound `Host` header is never used for external URLs.
 
 **PyGithub limitation:** The proxy preserves response bodies unchanged. PyGithub clients configured
 with a custom `base_url` may therefore fail when paginating because GitHub API URLs embedded in
-JSON responses still point to `api.github.com` ([Issue #18](https://github.com/gittrends-app/github-proxy-server/issues/18)).
+JSON responses still point to `api.github.com` ([Issue #18](https://github.com/hsborges-msr/github-proxy-server/issues/18)).
 This behavior is intentional for transparent proxying; see the [PyGithub sample](samples/pygithub/README.md)
 for a smoke test.
 
