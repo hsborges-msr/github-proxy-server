@@ -198,6 +198,29 @@ The `.husky/pre-commit` hook runs `yarn lint` and `yarn build` automatically. Bi
 enables only the current limited `noConsole` and `noExplicitAny` checks; other recommended rules
 are not enabled by this project.
 
+## Citation
+
+If you use GitHub Proxy Server in your research, please cite our paper published at SBES 2022 ([DOI: 10.1145/3555228.3555276](https://doi.org/10.1145/3555228.3555276)):
+
+> Hudson Silva Borges and Marco Tulio Valente. 2022. GitHub Proxy Server: A tool for supporting massive data collection on GitHub. In _Proceedings of the XXXVI Brazilian Symposium on Software Engineering (SBES '22)_. ACM, New York, NY, USA, 370–375. https://doi.org/10.1145/3555228.3555276
+
+```bibtex
+@inproceedings{borges2022githubproxyserver,
+  author    = {Borges, Hudson Silva and Valente, Marco Tulio},
+  title     = {GitHub Proxy Server: A tool for supporting massive data collection on GitHub},
+  booktitle = {Proceedings of the XXXVI Brazilian Symposium on Software Engineering},
+  series    = {SBES '22},
+  year      = {2022},
+  pages     = {370--375},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3555228.3555276},
+  url       = {https://doi.org/10.1145/3555228.3555276}
+}
+```
+
+Citation metadata is also available in [`CITATION.cff`](CITATION.cff). GitHub uses it to show a "Cite this repository" button.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

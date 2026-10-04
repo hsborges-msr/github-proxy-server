@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the preferred citation below."
+title: "GitHub Proxy Server"
+type: software
+authors:
+  - family-names: Borges
+    given-names: Hudson Silva
+  - family-names: Valente
+    given-names: Marco Tulio
+repository-code: "https://github.com/gittrends-app/github-proxy-server"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "GitHub Proxy Server: A tool for supporting massive data collection on GitHub"
+  authors:
+    - family-names: Borges
+      given-names: Hudson Silva
+      affiliation: "Faculdade de Computação (FACOM), Universidade Federal de Mato Grosso do Sul, Brazil"
+    - family-names: Valente
+      given-names: Marco Tulio
+      affiliation: "Departamento de Ciência da Computação (DCC), Universidade Federal de Minas Gerais, Brazil"
+  collection-title: "Proceedings of the XXXVI Brazilian Symposium on Software Engineering"
+  conference:
+    name: "XXXVI Brazilian Symposium on Software Engineering (SBES 2022)"
+    location: "Virtual Event, Brazil"
+  publisher:
+    name: ACM
+    city: "New York, NY, USA"
+  year: 2022
+  month: 10
+  start: 370
+  end: 375
+  doi: "10.1145/3555228.3555276"
+  url: "https://dl.acm.org/doi/10.1145/3555228.3555276"
